@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlslCanvas</title>
     <script type="text/javascript" src="dist/GlslCanvas.js"></script>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="style.css">
+    
     <style>
         body {
             background: #101515;
@@ -19,20 +22,22 @@
     </style>
 </head>
 <body>
-    <canvas id="glslCanvas" data-fragment-url="heart2_practicing.frag" width="800" height="600" data-textures="data/moon.jpg, data/MonaLisa.jpg">    
+    <canvas>
+        <canvas id="glslCanvas" data-fragment-url="heart2_practicing.frag" width="800" height="600" data-textures="data/moon.jpg, data/MonaLisa.jpg">    
+        </canvas>
+
+        <div class="button">
+            <div class="smallbutton"><a href="#">About</a></div>
+        
+            <div class="smallbutton"><a href="#">Pricing</a></div>
+        
+            <div class="smallbutton"><a href="#">Contact</a></div>
+        </div>
+
     </canvas>
 
-    <div class="mobile-wrapper">
-                <img src="images/icon-burger-menu.svg" alt="burger menu" style="width: 40px" class="burgermenu">
-
-                <div class="mobile-nav">
-                    <div class="mobilenavbutton"><a href="#">About</a></div>
-
-                    <div class="mobilenavbutton"><a href="#">Pricing</a></div>
     
-                    <div class="mobilenavbutton"><a href="#">Contact</a></div>
-                </div>
-            </div>
+           
 </body>
 <script>
     var canvas = document.getElementById("glslCanvas");
