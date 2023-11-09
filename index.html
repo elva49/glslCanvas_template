@@ -18,7 +18,20 @@
     </style>
 </head>
 <body>
-    <canvas id="glslCanvas" data-fragment-url="heart2_practicing.frag" width="800" height="600" data-textures="data/moon.jpg, data/MonaLisa.jpg"></canvas>
+    <canvas id="glslCanvas" data-fragment-url="heart2_practicing.frag" width="800" height="600" data-textures="data/moon.jpg, data/MonaLisa.jpg">    
+    </canvas>
+
+    <div class="mobile-wrapper">
+                <img src="images/icon-burger-menu.svg" alt="burger menu" style="width: 40px" class="burgermenu">
+
+                <div class="mobile-nav">
+                    <div class="mobilenavbutton"><a href="#">About</a></div>
+
+                    <div class="mobilenavbutton"><a href="#">Pricing</a></div>
+    
+                    <div class="mobilenavbutton"><a href="#">Contact</a></div>
+                </div>
+            </div>
 </body>
 <script>
     var canvas = document.getElementById("glslCanvas");
