@@ -51,5 +51,11 @@ header {
     margin-left: auto;
     margin-right: auto;
 
-
 }
+
+.navbutton a {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+
+  }
