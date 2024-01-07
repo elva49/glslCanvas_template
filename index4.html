@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlslCanvas</title>
+    <script type="text/javascript" src="dist/GlslCanvas.js"></script>
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            background: #000000;
+        }
+        #glslCanvas {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+        }
+    </style>
+</head>
+<body>
+        <canvas id="glslCanvas" data-fragment-url="in_class_practicing/interactive_circle_practicing.frag" width="600" height="400" data-textures="data/moon.jpg, data/MonaLisa.jpg">    
+        </canvas>
+    
+        <header>
+           
+            <nav class="nav1">
+                <div class="navbutton"><a href="index">Heart 1</a></div>
+
+                <div class="navbutton"><a href="index2">Heart 2</a></div>
+
+                <div class="navbutton"><a href="index3">Interactive Circle</a></div>
+
+                <div class="navbutton"><a href="index4">Action by liamegan</a></div>
+            </nav>
+
+        </header> 
+    <footer>
+         <div class="logo"><span class="bold">  Computational Aesthetics</span>  - Yu Chen Huang</div>
+    </footer>
+    
+</body>
+    
+<script>
+    var canvas = document.getElementById("glslCanvas");
+    var sandbox = new GlslCanvas(canvas);
+    var texCounter = 0;
+    var sandbox_content = "";
+    var sandbox_title = "";
+    var sandbox_author = "";
+    var sandbox_thumbnail = "";
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
+</script>
+    
+</html>
