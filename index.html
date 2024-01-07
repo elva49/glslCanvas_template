@@ -17,13 +17,12 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-0%, -0%);
+            transform: translate(-50%, -30%);
         }
     </style>
 </head>
 <body>
     <header>
-            <div class="logo"><span class="bold">Computational Aesthetics</span>  - Yu Chen Huang</div>
 
             <nav class="nav1">
                 <div class="navbutton"><a href="#">Heart1</a></div>
@@ -33,12 +32,15 @@
                 <div class="navbutton"><a href="index3">Interactive Circle</a></div>
             </nav>
 
-        </header>
+    </header>
     
-        <main>
+    <main>
              <canvas id="glslCanvas" data-fragment-url="in_class_practicing/heart_practicing.frag" width="800" height="600" data-textures="data/moon.jpg, data/MonaLisa.jpg">    
             </canvas>
-        </main>
+    </main>
+    <footer>
+        <div class="logo"><span class="bold">Computational Aesthetics</span>  - Yu Chen Huang</div>
+    </footer>
     
 </body>
     
@@ -50,8 +52,8 @@
     var sandbox_title = "";
     var sandbox_author = "";
     var sandbox_thumbnail = "";
-    canvas.style.width = '50%';
-    canvas.style.height = '50%';
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
 </script>
 
 
